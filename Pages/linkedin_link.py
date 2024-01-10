@@ -11,8 +11,8 @@ driver = webdriver.Chrome('drivers/macos/chromedrivermac')
 
 job_titles = ["Quality Assurance Engineer", "Automation engineer", "energy sector"]
 job_locations = ["Cupertino, CA", "Sunnyvale, CA", 'remote']
-# keywords = ["python", "selenium", "API", "JS", "JavaScript", "SeleniumWebDriver", "Postman", "PostgreSQL", "SQL"]
-keywords = ["engineer"]
+keywords = ["engineer", "python", "selenium", "API", "JS", "JavaScript", "SeleniumWebDriver", "Postman", "PostgreSQL", "SQL"]
+# keywords = ["engineer"]
 
 data_dictionary = {
 
@@ -34,21 +34,21 @@ def link():
                 print("I am loading the page")
 
                 # Maximize or expand the browser window
-                # driver.maximize_window()
-                # print("I am expanding the page")
+                driver.maximize_window()
+                print("I am expanding the page")
 
-                # #change the date filter
-                # wait.until(
-                #     EC.element_to_be_clickable((By.XPATH, '//*[@aria-label="Date posted filter. Any Time filter is currently applied. Clicking this button displays all Date posted filter options." ]'))
-                # ).click()
-                # time.sleep(5)
-                # wait.until(
-                #     EC.element_to_be_clickable((By.XPATH, '//label[contains(text(),"Past Week")]'))
-                # ).click()
-                # wait.until(
-                #     EC.element_to_be_clickable((By.XPATH, "//*[@class='filter__submit-button']"))
-                # ).click()
-                # print("I am changing the date filter") 
+                #change the date filter
+                wait.until(
+                    EC.element_to_be_clickable((By.XPATH, '//*[@aria-label="Date posted filter. Any Time filter is currently applied. Clicking this button displays all Date posted filter options." ]'))
+                ).click()
+                time.sleep(5)
+                wait.until(
+                    EC.element_to_be_clickable((By.XPATH, '//label[contains(text(),"Past Week")]'))
+                ).click()
+                wait.until(
+                    EC.element_to_be_clickable((By.XPATH, "//*[@class='filter__submit-button']"))
+                ).click()
+                print("I am changing the date filter") 
 
                 # Clicking on each job title on the page
 
@@ -58,64 +58,47 @@ def link():
                 )
 
                 # Sort elements based on their position
-                # sorted_titles = sorted(titles, key=lambda e: e.location_once_scrolled_into_view['y'])
+                sorted_titles = sorted(titles, key=lambda e: e.location_once_scrolled_into_view['y'])
 
                 # Iterate through each element, scroll to it, and click
                 # Wait for the first element to be clickable
                 wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@data-tracking-control-name="public_jobs_jserp-result_search-card"]')))
 
                 # Find all elements matching the given XPath
-                # titles = driver.find_elements(By.XPATH, '//*[@data-tracking-control-name="public_jobs_jserp-result_search-card"]')
+                titles = driver.find_elements(By.XPATH, '//*[@data-tracking-control-name="public_jobs_jserp-result_search-card"]')
 
                 # Iterate through the elements and click on each one
-                # for index, title in enumerate(titles):
-                #     title.click()
-                #     print(f"I am clicking on title {index + 1}")
-                #     time.sleep(3)
+                for index, title in enumerate(titles):
+                    title.click()
+                    print(f"I am clicking on title {index + 1}")
+                    time.sleep(3)
 
-                #     # Expands the page
-                #     expand_button_locator = (By.XPATH, '//*[@aria-label="Show more, visually expands previously read content above"]')
-                #     wait.until(EC.element_to_be_clickable(expand_button_locator)).click()
-                #     print("I am expanding the page")
-                #     time.sleep(3)
+                    # Expands the page
+                    expand_button_locator = (By.XPATH, '//*[@aria-label="Show more, visually expands previously read content above"]')
+                    wait.until(EC.element_to_be_clickable(expand_button_locator)).click()
+                    print("I am expanding the page")
+                    time.sleep(3)
+                    
 
-                #     # Extract the text content of the page
-                #     job_describtion_extracted = driver.find_element(By.XPATH, "//div[@class='show-more-less-html__markup relative overflow-hidden']").text
-                #     title = driver.find_element(By.XPATH, "//a[@class='topcard__link']").text
-                #     # company = driver.find_element(By.XPATH, "//div[@class='show-more-less-html__markup relative overflow-hidden']").text
-                #     # location = driver.find_element(By.XPATH, "//div[@class='show-more-less-html__markup relative overflow-hidden']").text
-                #     # print(job_describtion_extracted)
-                #     print(title)
+                    # Check if all keywords are present in the page text
+                    job_title_extracted = driver.find_element(By.XPATH, "//a[@class='topcard__link']").text
+                    company_extracted = driver.find_element(By.XPATH, "//a[@class='topcard__org-name-link topcard__flavor--black-link']").text
+                    location_extracted = driver.find_element(By.XPATH, "//span[@class='topcard__flavor topcard__flavor--bullet']").text
+                    job_describtion_extracted = driver.find_element(By.XPATH, "//div[@class='show-more-less-html__markup relative overflow-hidden']").text
 
-                #     # Check if all keywords are present in the page text
-                #     all_keywords_present = all(keyword.lower() in job_describtion_extracted.lower() for keyword in keywords)
+                    # Find and store the keywords that are present
+                    found_keywords = [keyword for keyword in keywords if keyword.lower() in job_describtion_extracted.lower()]
 
-                #     # Print the result
-                #     if all_keywords_present:
-                #             print("All keywords are present in the text.")
-                #     else:
-                #             print("Not all keywords are present in the text.") 
-
-                 # Expands the page
-                expand_button_locator = (By.XPATH, '//*[@aria-label="Show more, visually expands previously read content above"]')
-                wait.until(EC.element_to_be_clickable(expand_button_locator)).click()
-                print("I am expanding the page")
-                time.sleep(3)
-
-                # Extract the text content of the page
-
-                job_title_extracted = driver.find_element(By.XPATH, "//a[@class='topcard__link']").text
-                print(job_title_extracted)
-                data_dictionary['title'] = job_title_extracted
-                company_extracted = driver.find_element(By.XPATH, "//a[@class='topcard__org-name-link topcard__flavor--black-link']").text
-                print(company_extracted)
-                data_dictionary['company'] = company_extracted
-                location_extracted = driver.find_element(By.XPATH, "//span[@class='topcard__flavor topcard__flavor--bullet']").text
-                data_dictionary['location'] = location_extracted
-                print(location_extracted)
-                job_describtion_extracted = driver.find_element(By.XPATH, "//div[@class='show-more-less-html__markup relative overflow-hidden']").text
-                data_dictionary['describtion'] = job_describtion_extracted
-                print(data_dictionary)
+                    # Check if at least one keyword is present
+                    if found_keywords:
+                        print("Success: Found the following keyword(s):", ', '.join(found_keywords))
+                        # Extract the text content of the page
+                        data_dictionary['title'] = job_title_extracted
+                        data_dictionary['company'] = company_extracted
+                        data_dictionary['location'] = location_extracted
+                        data_dictionary['describtion'] = job_describtion_extracted
+                    else:
+                            print("Not all keywords are present in the text.") 
 
 
 
