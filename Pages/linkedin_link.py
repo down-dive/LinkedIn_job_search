@@ -14,12 +14,6 @@ job_locations = ["Cupertino, CA", "Sunnyvale, CA", 'remote']
 # keywords = ["python", "selenium", "API", "JS", "JavaScript", "SeleniumWebDriver", "Postman", "PostgreSQL", "SQL"]
 keywords = ["engineer"]
 
-# data_dictionary = {
-#     "title": 0,
-#     "company": 0,
-#     "location": 0,
-#     "describtion":0
-# }
 data_dictionary = {
 
 }
@@ -109,23 +103,19 @@ def link():
                 time.sleep(3)
 
                 # Extract the text content of the page
-                time.sleep(10)
-                print("I am sleeping")
-                # wait.until(EC.element_to_be_clickable((By.XPATH, "//a[@class='topcard__link']")))
-                # wait.until(EC.element_to_be_clickable((By.XPATH, "//div[@class='show-more-less-html__markup relative overflow-hidden']")))
-                # print("The link is clickable")
 
-                data_dictionary['title'] = job_title_extracted
                 job_title_extracted = driver.find_element(By.XPATH, "//a[@class='topcard__link']").text
                 print(job_title_extracted)
                 data_dictionary['title'] = job_title_extracted
                 company_extracted = driver.find_element(By.XPATH, "//a[@class='topcard__org-name-link topcard__flavor--black-link']").text
                 print(company_extracted)
+                data_dictionary['company'] = company_extracted
                 location_extracted = driver.find_element(By.XPATH, "//span[@class='topcard__flavor topcard__flavor--bullet']").text
-                # print(job_describtion_extracted)
+                data_dictionary['location'] = location_extracted
                 print(location_extracted)
                 job_describtion_extracted = driver.find_element(By.XPATH, "//div[@class='show-more-less-html__markup relative overflow-hidden']").text
-                print("Element found")
+                data_dictionary['describtion'] = job_describtion_extracted
+                print(data_dictionary)
 
 
 
