@@ -14,10 +14,14 @@ job_locations = ["Cupertino, CA", "Sunnyvale, CA", 'remote']
 # keywords = ["python", "selenium", "API", "JS", "JavaScript", "SeleniumWebDriver", "Postman", "PostgreSQL", "SQL"]
 keywords = ["engineer"]
 
+# data_dictionary = {
+#     "title": 0,
+#     "company": 0,
+#     "location": 0,
+#     "describtion":0
+# }
 data_dictionary = {
-    "title": 0,
-    "company": 0,
-    "location": 0,
+
 }
 
 def link():
@@ -36,8 +40,8 @@ def link():
                 print("I am loading the page")
 
                 # Maximize or expand the browser window
-                driver.maximize_window()
-                print("I am expanding the page")
+                # driver.maximize_window()
+                # print("I am expanding the page")
 
                 # #change the date filter
                 # wait.until(
@@ -67,7 +71,7 @@ def link():
                 wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@data-tracking-control-name="public_jobs_jserp-result_search-card"]')))
 
                 # Find all elements matching the given XPath
-                titles = driver.find_elements(By.XPATH, '//*[@data-tracking-control-name="public_jobs_jserp-result_search-card"]')
+                # titles = driver.find_elements(By.XPATH, '//*[@data-tracking-control-name="public_jobs_jserp-result_search-card"]')
 
                 # Iterate through the elements and click on each one
                 # for index, title in enumerate(titles):
@@ -82,15 +86,15 @@ def link():
                 #     time.sleep(3)
 
                 #     # Extract the text content of the page
-                #     page_text = driver.find_element(By.XPATH, "//div[@class='show-more-less-html__markup relative overflow-hidden']").text
+                #     job_describtion_extracted = driver.find_element(By.XPATH, "//div[@class='show-more-less-html__markup relative overflow-hidden']").text
                 #     title = driver.find_element(By.XPATH, "//a[@class='topcard__link']").text
                 #     # company = driver.find_element(By.XPATH, "//div[@class='show-more-less-html__markup relative overflow-hidden']").text
                 #     # location = driver.find_element(By.XPATH, "//div[@class='show-more-less-html__markup relative overflow-hidden']").text
-                #     # print(page_text)
+                #     # print(job_describtion_extracted)
                 #     print(title)
 
                 #     # Check if all keywords are present in the page text
-                #     all_keywords_present = all(keyword.lower() in page_text.lower() for keyword in keywords)
+                #     all_keywords_present = all(keyword.lower() in job_describtion_extracted.lower() for keyword in keywords)
 
                 #     # Print the result
                 #     if all_keywords_present:
@@ -98,27 +102,35 @@ def link():
                 #     else:
                 #             print("Not all keywords are present in the text.") 
 
+                 # Expands the page
+                expand_button_locator = (By.XPATH, '//*[@aria-label="Show more, visually expands previously read content above"]')
+                wait.until(EC.element_to_be_clickable(expand_button_locator)).click()
+                print("I am expanding the page")
+                time.sleep(3)
 
                 # Extract the text content of the page
                 time.sleep(10)
                 print("I am sleeping")
-                wait.until(EC.element_to_be_clickable((By.XPATH, "//a[@class='topcard__link']")))
-                print("The link is clickable")
-                # page_text = driver.find_element(By.XPATH, "//div[@class='show-more-less-html__markup relative overflow-hidden']").text
-                # title = driver.find_element(By.XPATH, "//a[@class='topcard__link']").text
-                # company = driver.find_element(By.XPATH, "//div[@class='show-more-less-html__markup relative overflow-hidden']").text
-                # location = driver.find_element(By.XPATH, "//div[@class='show-more-less-html__markup relative overflow-hidden']").text
-                # print(page_text)
-                # print(title)
+                # wait.until(EC.element_to_be_clickable((By.XPATH, "//a[@class='topcard__link']")))
+                # wait.until(EC.element_to_be_clickable((By.XPATH, "//div[@class='show-more-less-html__markup relative overflow-hidden']")))
+                # print("The link is clickable")
 
-                element = driver.find_element_by_css_selector('a.topcard__link h2.top-card-layout__title')
+                data_dictionary['title'] = job_title_extracted
+                job_title_extracted = driver.find_element(By.XPATH, "//a[@class='topcard__link']").text
+                print(job_title_extracted)
+                data_dictionary['title'] = job_title_extracted
+                company_extracted = driver.find_element(By.XPATH, "//a[@class='topcard__org-name-link topcard__flavor--black-link']").text
+                print(company_extracted)
+                location_extracted = driver.find_element(By.XPATH, "//span[@class='topcard__flavor topcard__flavor--bullet']").text
+                # print(job_describtion_extracted)
+                print(location_extracted)
+                job_describtion_extracted = driver.find_element(By.XPATH, "//div[@class='show-more-less-html__markup relative overflow-hidden']").text
+                print("Element found")
 
-                # Extract and print the text content of the element
-                element_text = element.text
-                print("Text extracted from the element:", element_text)
+
 
     except Exception as e:
-        print(f"An exception occurred: ")
+        print(f"An exception occurred: ", e)
 
     #     finally:
     #         # Close the browser
