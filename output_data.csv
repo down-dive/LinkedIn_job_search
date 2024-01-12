@@ -1,67 +1,60 @@
 Key,Value
-title,"Supplier/Vendor QA Engineer (Onsite: Sunnyvale, CA) W2 Only"
-company,Intuitive
-location,"Sunnyvale, CA"
-keywords,['engineer']
-link,https://www.linkedin.com/jobs/search?keywords=Sqa%2BEngineer&location=Cupertino%2C%2BCalifornia%2C%2BUnited%2BStates&geoId=106758460&f_TPR=r604800&distance=25&currentJobId=3797091395&position=2&pageNum=0
-describtion,"Work options: On-site
+title,"Inside Plant Cabling Quality Assurance Engineer , DCC Communities, Operations, IT, & Support Engineering"
+company,Amazon Web Services (AWS)
+location,"Santa Clara, CA"
+keywords,"['engineer', 'API']"
+link,https://www.linkedin.com/jobs/search?keywords=Sqa%2BEngineer&location=Cupertino%2C%2BCalifornia%2C%2BUnited%2BStates&geoId=106758460&f_TPR=r604800&distance=25&currentJobId=3718294897&position=13&pageNum=0
+description,"Description
 
-1 year contract opportunity - W2 (No C2C)
-Compensation: $60 - $70/hr
-Onsite:1050 Kifer Rd , Sunnyvale, CA, 94086
+Amazon Web Services (AWS) is a highly innovative company that collaborates across disciplines to produce cutting edge technology that changes our world. The AWS Inside Plant Design and Engineering Team is a new fast-growing and leading-edge research and development team that is rethinking the design for the critical arteries that connect the various pieces of hardware inside AWS’ data centers and edge sites.
 
-Intuitive Surgical, in cooperation with our recruitment partner Raise, are hiring. We’re a global technology leader in minimally invasive care and a pioneer of robotic-assisted surgery. Working closely with hospital teams, we’re developing integrated solutions that help enable physicians to get patients back to what matters most. Our technology has been used in nearly 10 million operations across 67 countries.
+As a member of this team, you will work directly with engineers and managers across the company to develop structured cabling and installation standards. You will also be charged with visiting our data centers and ensuring that we are following these standards while also collecting lessons learned so we are continually improving.
 
-Together, we’ve dedicated more than two decades for innovating for better care through enhanced experiences, improved efficiencies, and reduced cost of care. In this role, you will join a team committed to taking big leaps forward for a global community of healthcare professionals and their patients.
+Drive world-class quality in the Data Center to achieve the best operating, lowest cost infrastructure in the world. The QA engineer will be obsessed with quality, engineering and design continuous improvements.
+Ability and willingness to think outside of the box to find creative and innovative solutions to reduce costs while maintaining or improving quality, reliability, or maintainability
+The QA engineer will focus on fiber optic and optic components, cabling and interconnect products, technologies and standards at this point. The scope may expand to mechanical and electrical (M&E) and other mission critical components later.
+Work with engineering team to develop a global design standards document, global installation best practice guidelines and product specifications for ISP, develop a QA manuals and control amendments and revisions, develop audit strategies, and define quality and operational metrics that measure success.
+Audit and inspect DC & edge sites to ensure standards are being followed, verify defects, generate punch lists, report and generate remediation plans, action and close all customer complaints and defects, provide recommendations based on product and vendor performance, continuously propose improvements to existing designs and processes in order to improve ID’s speed, quality and efficiency.
+Conduct training sessions with local Infra Delivery Teams and any other Infra Ops organizations to ensure deployments comply with design standards and best practices.
+Candidates must be responsive and communicate with technical teams to collect requirements and communicate with internal customers to describe features, technical designs and strategy.
+Identify and respond to risks and high-priority issues rapidly and effectively
+Support New Product Introduction activities that improve infrastructure quality, reduce cost and installation time
+Travel 40+% to review projects and coordinate with onsite personnel and contractors at AWS' Data Centers
 
-Primary Function Of Position
+This is an opportunity to leverage and grow your existing quality and engineering experience in an innovative and highly collaborative environment where the results of your work will directly impact AWS and its customers.
 
-Responsible for ensuring suppliers meet ISI requirements for cost, quality, delivery and service. Drive suppliers to continuously improve business and manufacturing processes. Evaluate and select suppliers. Guide Engineering in choosing suppliers for new products and provide DFM input to new designs. Monitor supplier performance.
+Key job responsibilities
 
-Roles & Responsibilities
+Drive quality through education and inspections
+Maintain professionalism in stressful situations
+Ability to effectively communicate both orally and in writing
+Stand/walk/crouch for long periods of time
+Use Microsoft Office products efficiently
+Research and review technical documents and structural drawings
 
-This position has responsibility and authority to:
+We are open to hiring candidates to work out of one of the following locations:
 
-Select and evaluate suppliers by leading efforts to find new suppliers in an existing or new commodity.
-Work with suppliers and ISI engineering for the new product introduction to
-Complete part production qualification process (PPQP), which includes but not limited to delivering on the following deliverables: spFMEA, Special Process Validations, Process capability, capacity analysis ,and FAIR .
-Develop supplier ramp readiness based on forecast, supplier capacity, quality performance, and process capability.
-Perform DFM by engaging suppliers early in development cycle to feedback manufacturability improvements in the designs prior to production
-Lead and resolve the supply continuity/ quality issues at suppliers through in-depth root cause and corrective actions utilizing SCARs, SCRs (Supplier Change requests) and VR processes.
-Monitor supplier performance and initiate improvement activities.
-Drive suppliers to continually improve their business and manufacturing process performance to meet Intuitive’s requirements for supplier excellence including ship to stock programs using a collection of best practices in project management, Six Sigma, Lean, SPC and negotiation by leading these efforts with managerial guidance at several suppliers simultaneously.
-Driving change to ISI specifications as necessary by understanding and changing specifications and drawings including driving the ECO process to implementation.
-Prepare and deliver supplier communications as required by independently working with suppliers on scorecard creation of QBRs, Supplier Summits, etc.
-Identify and investigate opportunities for cost reduction and/or quality improvement by judging opportunities and creating strategies to seize those opportunities, completes research and provides data-driven plans to management.
+Hayward, CA, USA | Santa Clara, CA, USA | South San Francisco, CA, USA
 
-Skills, Experience, Education, & Training
+Basic Qualifications
 
-In order to adequately perform the responsibilities of this position the individual must possess:
+3+ years of experience in QA methodology and tools
+3+ years of Data Center project management and/or engineering experience.
+4+years in either fiber optic cable, optic components, cabling and interconnect products, technologies and standards (Optional: M&E and other mission critical facilities).
 
-BS degree in Engineering or equivalent, Master's degree preferred
-*3-5 years of experience is preferred
-Related experience in Supplier Quality and/or Supplier Development or related field preferred
-Demonstrable knowledge of a wide range of manufacturing processes including understanding of key input variables for quality, cost and capacity (specialization can be in metal fabrication, plastics, or contract manufacturing)
-Practical knowledge of pFMEAs, Cpk, and process validations
-Ability to read and interpret detailed mechanical drawings and communicate technical information
-Excellent problem solving and project management skills
-Excellent written and verbal communication skills including presentations to executive level management
-Practical knowledge of part production qualification process is a plus
-Significant computer experience using Windows, Word, Excel, Access and ERP Information Systems, preferably SAP
-CAD experience with 3D modeling tools is a plus
-Proven ability to motivate cross functional teams to complete a common goal
-Experience in a medical device company is a plus
-Ability to travel to suppliers on an as needed basis – domestic and international
+Preferred Qualifications
 
-Please note that this is a contract role providing services to Intuitive through our direct sourcing partner, Raise who manages Intuitive’s Contractor Talent Community. If you are selected for this role, you will be employed by Raise and will not be an employee of Intuitive.
+BICSI RCDD and/or DCDC certification, or Familiar with either ISO9001 / ISO11801, TIA568C, TIA942 and/or ANSI/BICSI 002-2014
+Experience in documenting corporate standards, best practice guidelines and/or manuals
+Quality Assurance Certifications (CQA/CQE)
+Experience in communicating with users, other technical teams, and senior management to collect requirements, describe features, technical designs, and strategy
+Multi-region and/or global experience
 
-Work With An Award Winning Employer
+Amazon is committed to a diverse and inclusive workplace. Amazon is an equal opportunity employer and does not discriminate on the basis of race, national origin, gender, gender identity, sexual orientation, protected veteran status, disability, age, or other legally protected status. For individuals with disabilities who would like to request an accommodation, please visit https://www.amazon.jobs/en/disability/us.
 
-Best Places to Work, Glassdoor Employees’ Choice, 2019 (#12 of 100), 2020 (#7 of 100)
-America’s Best Midsized Employers, Forbes, 2019 (#149 of 500)
-Top 150 Places to Work in Healthcare, Becker’s Hospital Review, 2019
-Top CEOs, Glassdoor, 2019 (#9 of 100)
+Our compensation reflects the cost of labor across several US geographic markets. The base pay for this position ranges from $59,800/year in our lowest geographic market up to $150,300/year in our highest geographic market. Pay is based on a number of factors including market location and may vary depending on job-related knowledge, skills, and experience. Amazon is a total compensation company. Dependent on the position offered, equity, sign-on payments, and other forms of compensation may be provided as part of a total compensation package, in addition to a full range of medical, financial, and/or other benefits. For more information, please visit https://www.aboutamazon.com/workplace/employee-benefits. Applicants should apply via our internal or external career site.
 
-Raise and Intuitive are Equal Employment Opportunity Employers. We provide equal employment opportunities to all qualified applicants and employees, and prohibit discrimination and harassment of any type, without regard to race, sex, pregnancy, sexual orientation, gender identity, national origin, color, age, religion, protected veteran or disability status, genetic information or any other status protected under federal, state, or local applicable laws. We will consider for employment all qualified applicants with arrest and conviction records in accordance with fair chance laws.
 
-Int22"
+Company - Amazon Data Services, Inc.
+
+Job ID: A2449479"
