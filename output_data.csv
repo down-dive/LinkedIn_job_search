@@ -1,57 +1,67 @@
 Key,Value
-title,QA Test Automation Engineer
-company,Cyngn
-location,"Menlo Park, CA"
-keywords,"['engineer', 'python']"
-link,https://www.linkedin.com/jobs/search?keywords=Sqa%2BEngineer&location=Cupertino%2C%2BCalifornia%2C%2BUnited%2BStates&geoId=106758460&f_TPR=r604800&distance=25&currentJobId=3771303022&position=1&pageNum=0
-describtion,"About Cyngn
+title,"Supplier/Vendor QA Engineer (Onsite: Sunnyvale, CA) W2 Only"
+company,Intuitive
+location,"Sunnyvale, CA"
+keywords,['engineer']
+link,https://www.linkedin.com/jobs/search?keywords=Sqa%2BEngineer&location=Cupertino%2C%2BCalifornia%2C%2BUnited%2BStates&geoId=106758460&f_TPR=r604800&distance=25&currentJobId=3797091395&position=2&pageNum=0
+describtion,"Work options: On-site
 
-Based in Menlo Park, CA, Cyngn is a publicly-traded autonomous vehicle company. Whether at a warehouse floor, mine, or construction site, our self-driving technology can be deployed at a variety of commercial domains, across a variety of vehicle form-factors. To build this emergent technology, we are looking for innovative, motivated, and experienced leaders to join our team and move this field forward. If you like to build, tinker, and create with a team of trusted and passionate colleagues, then Cyngn is the place for you. Key reasons to join Cyngn:
+1 year contract opportunity - W2 (No C2C)
+Compensation: $60 - $70/hr
+Onsite:1050 Kifer Rd , Sunnyvale, CA, 94086
 
-We are Small and Big.
+Intuitive Surgical, in cooperation with our recruitment partner Raise, are hiring. We’re a global technology leader in minimally invasive care and a pioneer of robotic-assisted surgery. Working closely with hospital teams, we’re developing integrated solutions that help enable physicians to get patients back to what matters most. Our technology has been used in nearly 10 million operations across 67 countries.
 
-With under 100 employees, Cyngn is still a company that operates with the energy of a startup. On the other hand, we are publicly traded. Combined, our employees not only work in close-knit teams with close mentorship from company leaders, they also get access to the liquidity of our publicly-traded equity. This gives our small team the opportunity to make a big impact in industries that other people aren’t touching — without taking on the risks associated with untested organizations.
+Together, we’ve dedicated more than two decades for innovating for better care through enhanced experiences, improved efficiencies, and reduced cost of care. In this role, you will join a team committed to taking big leaps forward for a global community of healthcare professionals and their patients.
 
-We Build Today and Deploy Tomorrow.
+Primary Function Of Position
 
-Our employees aren’t just researchers but are creating reality. In other words, the autonomous vehicles we’re building are designed to go to real clients right away. We are driven by our passion for innovation and the ability to see the entire product and the real impact of our work out in the real world. At Cyngn, the distance between the theoretical and the actual is razor-thin.
+Responsible for ensuring suppliers meet ISI requirements for cost, quality, delivery and service. Drive suppliers to continuously improve business and manufacturing processes. Evaluate and select suppliers. Guide Engineering in choosing suppliers for new products and provide DFM input to new designs. Monitor supplier performance.
 
-We aren’t robots. We just build them.
+Roles & Responsibilities
 
-Go read our glassdoor reviews and you’ll find that one of the best things about working here is the people. We are an inclusive, diverse team of top talent with exceptional synergy. We thrive on open collaboration and a trusting and creative work environment that is fueled by our passion for the industry. At Cyngn, everyone’s voice is valued and each of our unique perspectives is celebrated. It’s the people that allow our company to continue to grow bigger and better every day.
+This position has responsibility and authority to:
 
-About This Role
+Select and evaluate suppliers by leading efforts to find new suppliers in an existing or new commodity.
+Work with suppliers and ISI engineering for the new product introduction to
+Complete part production qualification process (PPQP), which includes but not limited to delivering on the following deliverables: spFMEA, Special Process Validations, Process capability, capacity analysis ,and FAIR .
+Develop supplier ramp readiness based on forecast, supplier capacity, quality performance, and process capability.
+Perform DFM by engaging suppliers early in development cycle to feedback manufacturability improvements in the designs prior to production
+Lead and resolve the supply continuity/ quality issues at suppliers through in-depth root cause and corrective actions utilizing SCARs, SCRs (Supplier Change requests) and VR processes.
+Monitor supplier performance and initiate improvement activities.
+Drive suppliers to continually improve their business and manufacturing process performance to meet Intuitive’s requirements for supplier excellence including ship to stock programs using a collection of best practices in project management, Six Sigma, Lean, SPC and negotiation by leading these efforts with managerial guidance at several suppliers simultaneously.
+Driving change to ISI specifications as necessary by understanding and changing specifications and drawings including driving the ECO process to implementation.
+Prepare and deliver supplier communications as required by independently working with suppliers on scorecard creation of QBRs, Supplier Summits, etc.
+Identify and investigate opportunities for cost reduction and/or quality improvement by judging opportunities and creating strategies to seize those opportunities, completes research and provides data-driven plans to management.
 
-We are looking for a talented QA Test and Automation Engineer with 3 to 5 years of experience to be a pivotal part of our Autonomous Robotics QA team. The ideal candidate will possess a deep understanding of embedded systems, robot testing, and will bring a passion for ensuring the highest quality in our robotic solutions.
+Skills, Experience, Education, & Training
 
-Responsibilities
+In order to adequately perform the responsibilities of this position the individual must possess:
 
-Design, develop, and execute automation scripts using open-source tools.
-Identify, record, and thoroughly document bugs in our robotic systems.
-Collaborate closely with the R&D team to understand product changes and ensure test coverage.
-Evaluate, recommend, and implement automated test tools and frameworks.
-Develop and execute test cases for embedded systems and robot functionality.
-Review system requirements and identify testing strategies that ensure software quality.
-Engage with cloud technologies, ensuring seamless integration and robust performance.
-Conduct field tests and report findings, ensuring our robotics solutions work in real-world scenarios.
-Debug system issues, providing clear and actionable feedback to the development team.
+BS degree in Engineering or equivalent, Master's degree preferred
+*3-5 years of experience is preferred
+Related experience in Supplier Quality and/or Supplier Development or related field preferred
+Demonstrable knowledge of a wide range of manufacturing processes including understanding of key input variables for quality, cost and capacity (specialization can be in metal fabrication, plastics, or contract manufacturing)
+Practical knowledge of pFMEAs, Cpk, and process validations
+Ability to read and interpret detailed mechanical drawings and communicate technical information
+Excellent problem solving and project management skills
+Excellent written and verbal communication skills including presentations to executive level management
+Practical knowledge of part production qualification process is a plus
+Significant computer experience using Windows, Word, Excel, Access and ERP Information Systems, preferably SAP
+CAD experience with 3D modeling tools is a plus
+Proven ability to motivate cross functional teams to complete a common goal
+Experience in a medical device company is a plus
+Ability to travel to suppliers on an as needed basis – domestic and international
 
-Qualifications
+Please note that this is a contract role providing services to Intuitive through our direct sourcing partner, Raise who manages Intuitive’s Contractor Talent Community. If you are selected for this role, you will be employed by Raise and will not be an employee of Intuitive.
 
-Bachelor's Degree in Electrical Engineering, Computer Science, or Computer Engineering.
-3-5 years of professional experience in QA testing, with a focus on automation.
-Proven experience in embedded systems testing.
-Strong knowledge of Python development.
-Experience with cloud technology testing.
-Familiarity with robot testing methodologies and tools.
-Solid understanding of system testing and debugging skills.
-Strong analytical, problem-solving, and decision-making capabilities.
-Excellent verbal and written communication skills.
+Work With An Award Winning Employer
 
-Bonus Qualifications
+Best Places to Work, Glassdoor Employees’ Choice, 2019 (#12 of 100), 2020 (#7 of 100)
+America’s Best Midsized Employers, Forbes, 2019 (#149 of 500)
+Top 150 Places to Work in Healthcare, Becker’s Hospital Review, 2019
+Top CEOs, Glassdoor, 2019 (#9 of 100)
 
-Field test experience in robotics or a related field.
-Knowledge of industry best practices in QA.
-Experience in continuous integration and continuous delivery (CI/CD) environments.
+Raise and Intuitive are Equal Employment Opportunity Employers. We provide equal employment opportunities to all qualified applicants and employees, and prohibit discrimination and harassment of any type, without regard to race, sex, pregnancy, sexual orientation, gender identity, national origin, color, age, religion, protected veteran or disability status, genetic information or any other status protected under federal, state, or local applicable laws. We will consider for employment all qualified applicants with arrest and conviction records in accordance with fair chance laws.
 
-$115,000 - $125,000 a year"
+Int22"

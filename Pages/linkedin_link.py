@@ -4,6 +4,10 @@ from assertpy import assert_that
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import StaleElementReferenceException
+
+
 import time
 import csv
 
@@ -64,46 +68,38 @@ def link():
 
             # Find all elements matching the given XPath
             titles = driver.find_elements(By.XPATH, '//*[@data-tracking-control-name="public_jobs_jserp-result_search-card"]')
-
             # Iterate through the elements and click on each one
-            for index, title in enumerate(titles):
-                title.click()
-                print(f"I am clicking on title {index + 1}")
+            for index in range(len(titles)):
+                # Set a timeout for the WebDriverWait
+                timeout = 10
 
-                # Get the current URL of the webpage
-                current_url = driver.current_url
+                try:
+                    # Re-find the title element on each iteration to avoid stale reference
+                    titles = driver.find_elements(By.XPATH, '//*[@data-tracking-control-name="public_jobs_jserp-result_search-card"]')
+                    title = titles[index]
 
-                # Print the current URL
-                # print("Current Webpage URL:", current_url)
+                    # Wait for the presence of the current title element
+                    element_present = EC.presence_of_element_located((By.XPATH, f'(//*[@data-tracking-control-name="public_jobs_jserp-result_search-card"])[{index + 1}]'))
 
-                # Expands the page
-                expand_button_locator = (By.XPATH, '//*[@aria-label="Show more, visually expands previously read content above"]')
-                wait.until(EC.element_to_be_clickable(expand_button_locator)).click()
-                print("I am expanding the page")
-              
-                # Check if all keywords are present in the page text
-                job_title_extracted = driver.find_element(By.XPATH, "//a[@class='topcard__link']").text
-                company_extracted = driver.find_element(By.XPATH, "//a[@class='topcard__org-name-link topcard__flavor--black-link']").text
-                location_extracted = driver.find_element(By.XPATH, "//span[@class='topcard__flavor topcard__flavor--bullet']").text
-                job_describtion_extracted = driver.find_element(By.XPATH, "//div[@class='show-more-less-html__markup relative overflow-hidden']").text
+                    # If the element is not present within the timeout, raise TimeoutException
+                    WebDriverWait(driver, timeout).until(element_present)
 
-                # Find and store the keywords that are present
-                found_keywords = [keyword for keyword in keywords if keyword.lower() in job_describtion_extracted.lower()]
+                    # If the element is found, proceed with interacting with it
+                    title.click()
+                    print(f"I am clicking on title {index + 1}")
+                    
+                    # Expands the page
+                    expand_button_locator = (By.XPATH, '//*[@aria-label="Show more, visually expands previously read content above"]')
+                    wait.until(EC.element_to_be_clickable(expand_button_locator)).click()
+                    print("I am expanding the page")
 
-                # Check if at least one keyword is present
-                if found_keywords:
-                    print("Success: Found the following keyword(s):", ', '.join(found_keywords))
-                    # Extract the text content of the page
-                    data_dictionary['title'] = job_title_extracted
-                    data_dictionary['company'] = company_extracted
-                    data_dictionary['location'] = location_extracted
-                    data_dictionary['keywords'] = found_keywords
-                    data_dictionary['link'] = current_url
-                    data_dictionary['describtion'] = job_describtion_extracted                    
+                except (TimeoutException, StaleElementReferenceException) as e:
+                    # If TimeoutException or StaleElementReferenceException is caught, reload the page and try again
+                    print(f"Exception occurred: {e}. Reloading the page...")
+                    driver.refresh()
 
-                else:
-                        print("Not all keywords are present in the text.")  
-
+                    # Now, you can attempt to locate the element again or perform other actions
+                
     except Exception as e:
         print(f"An exception occurred: ", e)
         print("I am at the end")
