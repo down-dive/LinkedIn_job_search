@@ -52,12 +52,15 @@ def link():
         # Change the date filter
         # wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@aria-label="Date posted filter. Any Time filter is currently applied. Clicking this button displays all Date posted filter options." ]'))).click()
         anytime_button = getattr(DateFilterLocators, "ANYTIME_BUTTON")
-        wait.until(EC.element_to_be_clickable(anytime_button))
+        wait.until(EC.element_to_be_clickable(anytime_button)).click()
+        print(" I am clicking on anythime button ")
         time.sleep(5)
-        sys.exit()
-        wait.until(EC.element_to_be_clickable((By.XPATH, '//label[contains(text(),"Past Week")]'))).click()
-        wait.until(EC.element_to_be_clickable((By.XPATH, "//*[@class='filter__submit-button']"))).click()
+        past_week_button = getattr(DateFilterLocators, "PAST_WEEK_BUTTON")     
+        wait.until(EC.element_to_be_clickable(past_week_button)).click()
+        done_button = getattr(DateFilterLocators, "DONE_BUTTON")
+        wait.until(EC.element_to_be_clickable(done_button)).click()
         print("I am changing the date filter")
+        sys.exit()
 
         # Clicking on each job title on the page
         titles = wait.until(EC.presence_of_all_elements_located((By.XPATH, '//*[@data-tracking-control-name="public_jobs_jserp-result_search-card"]')))
