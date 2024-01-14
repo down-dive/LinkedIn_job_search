@@ -1,4 +1,4 @@
-from locators import JobSearchLocators
+from locators import DateFilterLocators
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -7,6 +7,7 @@ from selenium.common.exceptions import TimeoutException, StaleElementReferenceEx
 
 import time
 import csv
+import sys
 
 # Initialize the WebDriver (assuming Chrome)
 driver = webdriver.Chrome('drivers/macos/chromedrivermac')
@@ -50,8 +51,10 @@ def link():
 
         # Change the date filter
         # wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@aria-label="Date posted filter. Any Time filter is currently applied. Clicking this button displays all Date posted filter options." ]'))).click()
-        wait.until(EC.element_to_be_clickable(By.XPATH, ANYTIME_BUTTON))
+        anytime_button = getattr(DateFilterLocators, "ANYTIME_BUTTON")
+        wait.until(EC.element_to_be_clickable(anytime_button))
         time.sleep(5)
+        sys.exit()
         wait.until(EC.element_to_be_clickable((By.XPATH, '//label[contains(text(),"Past Week")]'))).click()
         wait.until(EC.element_to_be_clickable((By.XPATH, "//*[@class='filter__submit-button']"))).click()
         print("I am changing the date filter")
