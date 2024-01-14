@@ -1,3 +1,4 @@
+from locators import JobSearchLocators
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -48,7 +49,8 @@ def link():
         print("I am expanding the page")
 
         # Change the date filter
-        wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@aria-label="Date posted filter. Any Time filter is currently applied. Clicking this button displays all Date posted filter options." ]'))).click()
+        # wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@aria-label="Date posted filter. Any Time filter is currently applied. Clicking this button displays all Date posted filter options." ]'))).click()
+        wait.until(EC.element_to_be_clickable(By.XPATH, ANYTIME_BUTTON))
         time.sleep(5)
         wait.until(EC.element_to_be_clickable((By.XPATH, '//label[contains(text(),"Past Week")]'))).click()
         wait.until(EC.element_to_be_clickable((By.XPATH, "//*[@class='filter__submit-button']"))).click()
