@@ -2,10 +2,12 @@ import sys
 import argparse
 import Pages.landing_page as landing
 import Pages.login_page as login
-import Pages.linkedin_link as link
+import main as main
+import numpy as np
+
 
 
 # landing.landing()
 
-link.link()
+main.main()
 
