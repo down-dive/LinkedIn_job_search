@@ -1,60 +1,71 @@
 Key,Value
-title,"Inside Plant Cabling Quality Assurance Engineer , DCC Communities, Operations, IT, & Support Engineering"
-company,Amazon Web Services (AWS)
-location,"Santa Clara, CA"
-keywords,"['engineer', 'API']"
-link,https://www.linkedin.com/jobs/search?keywords=Sqa%2BEngineer&location=Cupertino%2C%2BCalifornia%2C%2BUnited%2BStates&geoId=106758460&f_TPR=r604800&distance=25&currentJobId=3718294897&position=13&pageNum=0
-description,"Description
+title,(Remote) Mobile App Software Test Engineer
+company,Stryker
+location,"Menlo Park, CA"
+keywords,"['engineer', 'python', 'API']"
+link,https://www.linkedin.com/jobs/search?keywords=Sqa%2BEngineer&location=Cupertino%2C%2BCalifornia%2C%2BUnited%2BStates&geoId=106758460&f_TPR=r604800&distance=25&currentJobId=3776021201&position=3&pageNum=0
+description,"Why engineering at Stryker?
 
-Amazon Web Services (AWS) is a highly innovative company that collaborates across disciplines to produce cutting edge technology that changes our world. The AWS Inside Plant Design and Engineering Team is a new fast-growing and leading-edge research and development team that is rethinking the design for the critical arteries that connect the various pieces of hardware inside AWS’ data centers and edge sites.
+At Stryker we are dedicated to improving lives, with a passion for researching and developing new medical device products. As an engineer at Stryker, you will be proud of the work that you will be doing, using cutting-edge technologies to make healthcare better. Here, you will work in a supportive culture with other incredibly talented and intelligent people, creating industry-leading medical technology products. You will also have growth opportunities as we have a culture that supports your personal and professional development.
 
-As a member of this team, you will work directly with engineers and managers across the company to develop structured cabling and installation standards. You will also be charged with visiting our data centers and ensuring that we are following these standards while also collecting lessons learned so we are continually improving.
+Need another reason to apply? Check out these 8 reasons to join Stryker's engineering team: https://www.strykercareersblog.com/post/8-reasons-to-join-strykers-engineering-team
 
-Drive world-class quality in the Data Center to achieve the best operating, lowest cost infrastructure in the world. The QA engineer will be obsessed with quality, engineering and design continuous improvements.
-Ability and willingness to think outside of the box to find creative and innovative solutions to reduce costs while maintaining or improving quality, reliability, or maintainability
-The QA engineer will focus on fiber optic and optic components, cabling and interconnect products, technologies and standards at this point. The scope may expand to mechanical and electrical (M&E) and other mission critical components later.
-Work with engineering team to develop a global design standards document, global installation best practice guidelines and product specifications for ISP, develop a QA manuals and control amendments and revisions, develop audit strategies, and define quality and operational metrics that measure success.
-Audit and inspect DC & edge sites to ensure standards are being followed, verify defects, generate punch lists, report and generate remediation plans, action and close all customer complaints and defects, provide recommendations based on product and vendor performance, continuously propose improvements to existing designs and processes in order to improve ID’s speed, quality and efficiency.
-Conduct training sessions with local Infra Delivery Teams and any other Infra Ops organizations to ensure deployments comply with design standards and best practices.
-Candidates must be responsive and communicate with technical teams to collect requirements and communicate with internal customers to describe features, technical designs and strategy.
-Identify and respond to risks and high-priority issues rapidly and effectively
-Support New Product Introduction activities that improve infrastructure quality, reduce cost and installation time
-Travel 40+% to review projects and coordinate with onsite personnel and contractors at AWS' Data Centers
+We are proud to be named one of the World’s Best Workplaces and a Best Workplace for Diversity by Fortune Magazine! Learn more about our award-winning organization by visiting stryker.com
 
-This is an opportunity to leverage and grow your existing quality and engineering experience in an innovative and highly collaborative environment where the results of your work will directly impact AWS and its customers.
+It's Time to Join Stryker!
 
-Key job responsibilities
+In this role, you will work along with a team of software engineers develop and deploy iOS/Android based apps that tackle obstetric hemorrhage, retained sponges and inappropriate transfusions. See an overview here: Triton App Overview
 
-Drive quality through education and inspections
-Maintain professionalism in stressful situations
-Ability to effectively communicate both orally and in writing
-Stand/walk/crouch for long periods of time
-Use Microsoft Office products efficiently
-Research and review technical documents and structural drawings
+This is a unique, high visibility opportunity for a someone who wants to make business impacts. In this role, you will bring your outstanding analytical abilities and desire to work with cross-functional teams and systems. You are a self-starter and able to learn on the go.
 
-We are open to hiring candidates to work out of one of the following locations:
+What You Will Do
 
-Hayward, CA, USA | Santa Clara, CA, USA | South San Francisco, CA, USA
+Technical Responsibilities:
 
-Basic Qualifications
+You will build and maintain scalable mobile test automation frameworks and supporting infrastructure for Mobile Native
+You will be responsible for all automation and performance testing activities - planning, script design, test script generation/maintenance, performance test execution, report generation, results analysis, defect generation and following up for closure.
+You will drive continual improvement of the automation and performance testing process at the team level.
+You will contribute to developing and enhancing the automation framework as well as keeping it up to date with changes in functionality
+You will apply performance testing tools and technologies to support the testing process and framework across an integrated Agile software development lifecycle.
+You will participate in peer reviews of Test Engineers’ test designs and be self-directed in test case design, execution, results analysis and defect reporting.
+You will interact with QA team, Developers and others for manual and automation test planning and implementation.
+You will develop and execute maintainable automation tests for acceptance, functional, and regression test cases.
 
-3+ years of experience in QA methodology and tools
-3+ years of Data Center project management and/or engineering experience.
-4+years in either fiber optic cable, optic components, cabling and interconnect products, technologies and standards (Optional: M&E and other mission critical facilities).
+What You Need:
 
-Preferred Qualifications
+Bachelor's degree in Software Engineering / Computer Science or related discipline required
+4+ years of related work experience required
+2+ years of experience developing and executing automated test cases on mobile applications required
+Experience with object-oriented programming languages (Swift, Objective-C, Kotlin, or Java) required
 
-BICSI RCDD and/or DCDC certification, or Familiar with either ISO9001 / ISO11801, TIA568C, TIA942 and/or ANSI/BICSI 002-2014
-Experience in documenting corporate standards, best practice guidelines and/or manuals
-Quality Assurance Certifications (CQA/CQE)
-Experience in communicating with users, other technical teams, and senior management to collect requirements, describe features, technical designs, and strategy
-Multi-region and/or global experience
+What We Would Love That You Have (Preferred):
 
-Amazon is committed to a diverse and inclusive workplace. Amazon is an equal opportunity employer and does not discriminate on the basis of race, national origin, gender, gender identity, sexual orientation, protected veteran status, disability, age, or other legally protected status. For individuals with disabilities who would like to request an accommodation, please visit https://www.amazon.jobs/en/disability/us.
+Experience with testing and automating REST API
+Experience with Mobile testing frameworks such as Appium, Espresso, XCUITest
+Experience with at least one scripting language - VBScript, Pearl, Python, or Shell
+Ability to lead strategies with tools for static/dynamic analysis, memory management, code coverage and techniques for analyzing software
+Ability to lead integration and deployment processes
+Regulatory and compliance standards applied to the SDLC (Software Development Life Cycle)
+95,100 - $204,000 salary plus bonus eligible + Benefits (Health, Vision, Dental, 401K, Tuition Reimbursement, Employee Assistance Program, Wellbeing Program, Employee Stock Purchase Program). This information reflects the anticipated salary range for this position based on current national data. Actual minimum and maximum may vary based location. Individual pay is based on skills, experience, and other relevant factors.
 
-Our compensation reflects the cost of labor across several US geographic markets. The base pay for this position ranges from $59,800/year in our lowest geographic market up to $150,300/year in our highest geographic market. Pay is based on a number of factors including market location and may vary depending on job-related knowledge, skills, and experience. Amazon is a total compensation company. Dependent on the position offered, equity, sign-on payments, and other forms of compensation may be provided as part of a total compensation package, in addition to a full range of medical, financial, and/or other benefits. For more information, please visit https://www.aboutamazon.com/workplace/employee-benefits. Applicants should apply via our internal or external career site.
+About Stryker
 
+Our benefits:
 
-Company - Amazon Data Services, Inc.
+12 paid holidays annually
+Health benefits include: Medical and prescription drug insurance, dental insurance, vision insurance, critical illness insurance, accident insurance, hospital indemnity insurance, personalized healthcare support, wellbeing program and tobacco cessation program.
+Financial benefits include Health Savings Account (HSA), Flexible Spending Accounts (FSAs), 401(k) plan, Employee Stock Purchase Plan (ESPP), basic life and AD&D insurance, and short-term disability insurance.
 
-Job ID: A2449479"
+For a more detailed overview of our benefits or time off, please follow this link to learn more: US Stryker employee benefits
+
+About Stryker
+
+Stryker is one of the world’s leading medical technology companies and, together with its customers, is driven to make healthcare better. The company offers innovative products and services in Medical and Surgical, Neurotechnology, Orthopaedics and Spine that help improve patient and healthcare outcomes. Alongside its customers around the world, Stryker impacts more than 130 million patients annually. More information is available at stryker.com.
+
+Know someone at Stryker?
+
+Be sure to have them submit you as a referral prior to applying for this position. Learn more about our employee referral program on our referral page
+
+Stryker is driven to work together with our customers to make healthcare better. Employees and new hires in sales and field roles that require access to customer accounts as a function of the job may be required, depending on customer requirements, to obtain various vaccinations as an essential function of their role.
+
+R496615"
