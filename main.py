@@ -21,6 +21,9 @@ def main():
 
         driver.maximize_window()
         print("I am expanding the page")
+        
+        # Specify job title and the location
+        linkedin_page.navigate_to_jobs("software-engineer", "san-francisco")
 
         # Apply date filter using LinkedInPage instance
         linkedin_page.apply_date_filter()

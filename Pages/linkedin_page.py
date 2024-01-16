@@ -1,4 +1,5 @@
 from locators import DateFilterLocators
+from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -7,6 +8,9 @@ from selenium.common.exceptions import TimeoutException, StaleElementReferenceEx
 import time
 import csv
 import sys
+# Initialize the WebDriver (assuming Chrome)
+driver = webdriver.Chrome('drivers/macos/chromedrivermac')
+wait = WebDriverWait(driver, 10)
 
 # # Initialize the WebDriver (assuming Chrome)
 # driver = webdriver.Chrome('drivers/macos/chromedrivermac')
@@ -41,6 +45,10 @@ class LinkedInPage:
     def __init__(self, driver):
         self.driver = driver
         self.wait = WebDriverWait(driver, 10)
+        
+    def navigate_to_jobs(self, title, location):
+        modified_url = f'https://www.linkedin.com/jobs/{title.lower().replace(" ", "-")}-jobs-{location.lower().replace(" ", "-")}?position=1&pageNum=0'
+        self.driver.get(modified_url)
 
     def apply_date_filter(self):
 
@@ -50,34 +58,80 @@ class LinkedInPage:
 
         past_week_button = self.wait.until(EC.element_to_be_clickable(DateFilterLocators.PAST_WEEK_BUTTON))
         past_week_button.click()
+        time.sleep(5)
 
         done_button = self.wait.until(EC.element_to_be_clickable(DateFilterLocators.DONE_BUTTON))
         done_button.click()
+        time.sleep(5)
         print("I am changing the date filter")
         
     def click_job_title(self):
-        index = 0
-        try:
-            print("I am on titles")
-            titles = self.wait.until(EC.presence_of_all_elements_located((By.XPATH, '//*[@data-tracking-control-name="public_jobs_jserp-result_search-card"]')))
-            print("Titles: ", len(titles))
-            
+        # Clicking on each job title on the page
+        titles = wait.until(EC.presence_of_all_elements_located((By.XPATH, '//*[@data-tracking-control-name="public_jobs_jserp-result_search-card"]')))
+
+        wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@data-tracking-control-name="public_jobs_jserp-result_search-card"]')))
+
+        titles = driver.find_elements(By.XPATH, '//*[@data-tracking-control-name="public_jobs_jserp-result_search-card"]')
+        
+        for index in range(len(titles)):
             if index < len(titles):
-                title = titles[index]
-                element_present = EC.presence_of_element_located((By.XPATH, f'(//*[@data-tracking-control-name="public_jobs_jserp-result_search-card"])[{index + 1}]'))
-                self.wait.until(element_present)
+                timeout = 10
+                try:
+                    titles = driver.find_elements(By.XPATH, '//*[@data-tracking-control-name="public_jobs_jserp-result_search-card"]')
+                    title = titles[index]
+                    element_present = EC.presence_of_element_located((By.XPATH, f'(//*[@data-tracking-control-name="public_jobs_jserp-result_search-card"])[{index + 1}]'))
+                    WebDriverWait(driver, timeout).until(element_present)
 
-                title.click()
-                print(f"I am clicking on title {index + 1}")
-                return True
-            else:
-                print("Index is out of bounds.")
-                return False
+                    title.click()
+                    print(f"I am clicking on title {index + 1}")
+                    current_url = driver.current_url
+                    print("Current Webpage URL:", current_url)
 
-        except (TimeoutException, StaleElementReferenceException) as e:
-            print(f"Exception occurred: {e}. Reloading the page...")
-            self.driver.refresh()
-            return False
+                    expand_button_locator = (By.XPATH, '//*[@aria-label="Show more, visually expands previously read content above"]')
+                    wait.until(EC.element_to_be_clickable(expand_button_locator)).click()
+                    print("I am expanding the page")
+
+                    job_title_extracted = driver.find_element(By.XPATH, "//a[@class='topcard__link']").text
+                    company_extracted = driver.find_element(By.XPATH, "//a[@class='topcard__org-name-link topcard__flavor--black-link']").text
+                    location_extracted = driver.find_element(By.XPATH, "//span[@class='topcard__flavor topcard__flavor--bullet']").text
+                    job_description_extracted = driver.find_element(By.XPATH, "//div[@class='show-more-less-html__markup relative overflow-hidden']").text
+
+                    found_keywords = [keyword for keyword in keywords if keyword.lower() in job_description_extracted.lower()]
+
+                    if found_keywords:
+                        print("Success: Found the following keyword(s):", ', '.join(found_keywords))
+                        data_dictionary['title'] = job_title_extracted
+                        data_dictionary['company'] = company_extracted
+                        data_dictionary['location'] = location_extracted
+                        data_dictionary['keywords'] = found_keywords
+                        data_dictionary['link'] = current_url
+                        data_dictionary['description'] = job_description_extracted
+                    else:
+                        print("Not all keywords are present in the text.")
+
+                except (TimeoutException, StaleElementReferenceException) as e:
+                    print(f"Exception occurred: {e}. Reloading the page...")
+                    driver.refresh()
+                    expand_button_locator = (By.XPATH, '//*[@aria-label="Show more, visually expands previously read content above"]')
+                    wait.until(EC.element_to_be_clickable(expand_button_locator)).click()
+                    print("I am expanding the page")
+                    job_title_extracted = driver.find_element(By.XPATH, "//a[@class='topcard__link']").text
+                    company_extracted = driver.find_element(By.XPATH, "//a[@class='topcard__org-name-link topcard__flavor--black-link']").text
+                    location_extracted = driver.find_element(By.XPATH, "//span[@class='topcard__flavor topcard__flavor--bullet']").text
+                    job_description_extracted = driver.find_element(By.XPATH, "//div[@class='show-more-less-html__markup relative overflow-hidden']").text
+                    
+                    found_keywords = [keyword for keyword in keywords if keyword.lower() in job_description_extracted.lower()]
+
+                    if found_keywords:
+                        print("Success: Found the following keyword(s):", ', '.join(found_keywords))
+                        data_dictionary['title'] = job_title_extracted
+                        data_dictionary['company'] = company_extracted
+                        data_dictionary['location'] = location_extracted
+                        data_dictionary['keywords'] = found_keywords
+                        data_dictionary['link'] = current_url
+                        data_dictionary['description'] = job_description_extracted
+                    else:
+                        print("Not all keywords are present in the text.")
 
     # Other methods related to LinkedInPage can be added here
 
