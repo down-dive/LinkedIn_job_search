@@ -32,8 +32,9 @@ def main():
 
         # Continue with the rest of your logic using LinkedInPage instance
 
-    except Exception as e:
-        print(f"An exception occurred: {e}")
+    # except Exception as e:
+    #     print(f"An exception occurred: {e}")
     finally:
+        print("I am on finally")
         # Close the WebDriver
-        driver.quit()
+        # driver.quit()

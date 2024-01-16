@@ -10,7 +10,7 @@ import csv
 import sys
 # Initialize the WebDriver (assuming Chrome)
 driver = webdriver.Chrome('drivers/macos/chromedrivermac')
-wait = WebDriverWait(driver, 10)
+wait = WebDriverWait(driver, 20)
 
 # # Initialize the WebDriver (assuming Chrome)
 # driver = webdriver.Chrome('drivers/macos/chromedrivermac')
@@ -51,6 +51,7 @@ class LinkedInPage:
         self.driver.get(modified_url)
 
     def apply_date_filter(self):
+        print(" I am on date filter")
 
         anytime_button = self.wait.until(EC.element_to_be_clickable(DateFilterLocators.ANYTIME_BUTTON))
         anytime_button.click()
@@ -66,15 +67,21 @@ class LinkedInPage:
         print("I am changing the date filter")
         
     def click_job_title(self):
+        print("I am on titles")
         # Clicking on each job title on the page
-        titles = wait.until(EC.presence_of_all_elements_located((By.XPATH, '//*[@data-tracking-control-name="public_jobs_jserp-result_search-card"]')))
+        # titles = wait.until(EC.presence_of_all_elements_located((By.XPATH, '//*[@data-tracking-control-name="public_jobs_jserp-result_search-card"]')))
+        # Wait for the presence and visibility of all elements
+        titles = wait.until(EC.visibility_of_all_elements_located((By.XPATH, '//*[@data-tracking-control-name="public_jobs_jserp-result_search-card"]')))
+        print("Titles are located")
+        
 
-        wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@data-tracking-control-name="public_jobs_jserp-result_search-card"]')))
+        # wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@data-tracking-control-name="public_jobs_jserp-result_search-card"]')))
 
-        titles = driver.find_elements(By.XPATH, '//*[@data-tracking-control-name="public_jobs_jserp-result_search-card"]')
+        # titles = driver.find_elements(By.XPATH, '//*[@data-tracking-control-name="public_jobs_jserp-result_search-card"]')
         
         for index in range(len(titles)):
             if index < len(titles):
+                print(len(titles))
                 timeout = 10
                 try:
                     titles = driver.find_elements(By.XPATH, '//*[@data-tracking-control-name="public_jobs_jserp-result_search-card"]')
