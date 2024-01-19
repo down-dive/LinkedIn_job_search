@@ -60,7 +60,7 @@ def link():
         done_button = getattr(DateFilterLocators, "DONE_BUTTON")
         wait.until(EC.element_to_be_clickable(done_button)).click()
         print("I am changing the date filter")
-        sys.exit()
+        # sys.exit()
 
         # Clicking on each job title on the page
         titles = wait.until(EC.presence_of_all_elements_located((By.XPATH, '//*[@data-tracking-control-name="public_jobs_jserp-result_search-card"]')))

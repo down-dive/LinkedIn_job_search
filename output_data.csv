@@ -1,60 +1,67 @@
 Key,Value
-title,"Inside Plant Cabling Quality Assurance Engineer , DCC Communities, Operations, IT, & Support Engineering"
-company,Amazon Web Services (AWS)
-location,"Santa Clara, CA"
-keywords,"['engineer', 'API']"
-link,https://www.linkedin.com/jobs/search?keywords=Sqa%2BEngineer&location=Cupertino%2C%2BCalifornia%2C%2BUnited%2BStates&geoId=106758460&f_TPR=r604800&distance=25&currentJobId=3718294897&position=13&pageNum=0
-description,"Description
+title,NetApp Emerging Talent - QA Engineer
+company,Professional Diversity Network
+location,"San Jose, CA"
+keywords,"['engineer', 'python']"
+link,https://www.linkedin.com/jobs/search?keywords=Sqa%2BEngineer&location=Cupertino%2C%2BCalifornia%2C%2BUnited%2BStates&geoId=106758460&f_TPR=r604800&distance=25&original_referer=https%3A%2F%2Fwww.linkedin.com%2Fjobs%2Fsqa-engineer-jobs-cupertino-ca%3Fkeywords%3DSqa%2BEngineer%26location%3DCupertino%252C%2BCalifornia%252C%2BUnited%2BStates%26locationId%3D%26geoId%3D106758460%26f_TPR%3Dr604800%26distance%3D25&currentJobId=3805985620&position=13&pageNum=0
+description,"About NetApp
 
-Amazon Web Services (AWS) is a highly innovative company that collaborates across disciplines to produce cutting edge technology that changes our world. The AWS Inside Plant Design and Engineering Team is a new fast-growing and leading-edge research and development team that is rethinking the design for the critical arteries that connect the various pieces of hardware inside AWS’ data centers and edge sites.
+We're forward-thinking technology people with heart. We make our own rules, drive our own opportunities, and try to approach every challenge with fresh eyes. Of course, we can't do it alone. We know when to ask for help, collaborate with others, and partner with smart people. We embrace diversity and openness because it's in our DNA. We push limits and reward great ideas. What is your great idea?
 
-As a member of this team, you will work directly with engineers and managers across the company to develop structured cabling and installation standards. You will also be charged with visiting our data centers and ensuring that we are following these standards while also collecting lessons learned so we are continually improving.
+""At NetApp, we fully embrace and advance a diverse, inclusive global workforce with a culture of belonging that leverages the backgrounds and perspectives of all employees, customers, partners, and communities to foster a higher performing organization."" -George Kurian, CEO
 
-Drive world-class quality in the Data Center to achieve the best operating, lowest cost infrastructure in the world. The QA engineer will be obsessed with quality, engineering and design continuous improvements.
-Ability and willingness to think outside of the box to find creative and innovative solutions to reduce costs while maintaining or improving quality, reliability, or maintainability
-The QA engineer will focus on fiber optic and optic components, cabling and interconnect products, technologies and standards at this point. The scope may expand to mechanical and electrical (M&E) and other mission critical components later.
-Work with engineering team to develop a global design standards document, global installation best practice guidelines and product specifications for ISP, develop a QA manuals and control amendments and revisions, develop audit strategies, and define quality and operational metrics that measure success.
-Audit and inspect DC & edge sites to ensure standards are being followed, verify defects, generate punch lists, report and generate remediation plans, action and close all customer complaints and defects, provide recommendations based on product and vendor performance, continuously propose improvements to existing designs and processes in order to improve ID’s speed, quality and efficiency.
-Conduct training sessions with local Infra Delivery Teams and any other Infra Ops organizations to ensure deployments comply with design standards and best practices.
-Candidates must be responsive and communicate with technical teams to collect requirements and communicate with internal customers to describe features, technical designs and strategy.
-Identify and respond to risks and high-priority issues rapidly and effectively
-Support New Product Introduction activities that improve infrastructure quality, reduce cost and installation time
-Travel 40+% to review projects and coordinate with onsite personnel and contractors at AWS' Data Centers
+Job Summary
 
-This is an opportunity to leverage and grow your existing quality and engineering experience in an innovative and highly collaborative environment where the results of your work will directly impact AWS and its customers.
+We are seeking candidates for an entry-level position with 2-3 years of professional experience in the software development and testing field. This role is designed for individuals looking to build on their existing skills and take the next step in their career.
 
-Key job responsibilities
+As a Quality Assurance Engineer you would work to ensure that products being built and processes being used adhere to all standards and requirements.As a key function in our engineering organization, you'd be responsible for identifying and eliminating defects in NetApp products and solutions to ensure customer satisfaction.
 
-Drive quality through education and inspections
-Maintain professionalism in stressful situations
-Ability to effectively communicate both orally and in writing
-Stand/walk/crouch for long periods of time
-Use Microsoft Office products efficiently
-Research and review technical documents and structural drawings
+We invest heavily in new talent. Your energy and fresh ideas are vital to cementing our position as a market -leader. We'll push you beyond your comfort zone with a belief that no idea is off-limits. At the same time, you'll have all the resources, mentoring and feedback you need to grow. What's more, whatever your role, you can be yourself in a team that celebrates individuality and welcomes different perspectives.
 
-We are open to hiring candidates to work out of one of the following locations:
+Job Requirements
 
-Hayward, CA, USA | Santa Clara, CA, USA | South San Francisco, CA, USA
+Perform quality reviews and internal audits; evaluating data and writing reports to validate or indicate deviations from existing standards.
 
-Basic Qualifications
+Development experience including design, implementation, documentation, and maintenance of test automation in Python, Perl, C or C++
 
-3+ years of experience in QA methodology and tools
-3+ years of Data Center project management and/or engineering experience.
-4+years in either fiber optic cable, optic components, cabling and interconnect products, technologies and standards (Optional: M&E and other mission critical facilities).
+Exposure developing complex test automation scripts and/or automation frameworks
 
-Preferred Qualifications
+Experience creating and executing system level test plans, test cases and test reports for large/complex projects
 
-BICSI RCDD and/or DCDC certification, or Familiar with either ISO9001 / ISO11801, TIA568C, TIA942 and/or ANSI/BICSI 002-2014
-Experience in documenting corporate standards, best practice guidelines and/or manuals
-Quality Assurance Certifications (CQA/CQE)
-Experience in communicating with users, other technical teams, and senior management to collect requirements, describe features, technical designs, and strategy
-Multi-region and/or global experience
+Analyzing statistical data and product specifications to determine standards and establish quality and reliability objectives of finished product.
 
-Amazon is committed to a diverse and inclusive workplace. Amazon is an equal opportunity employer and does not discriminate on the basis of race, national origin, gender, gender identity, sexual orientation, protected veteran status, disability, age, or other legally protected status. For individuals with disabilities who would like to request an accommodation, please visit https://www.amazon.jobs/en/disability/us.
+Recommending modifications to existing quality or production standards to achieve optimum quality.
 
-Our compensation reflects the cost of labor across several US geographic markets. The base pay for this position ranges from $59,800/year in our lowest geographic market up to $150,300/year in our highest geographic market. Pay is based on a number of factors including market location and may vary depending on job-related knowledge, skills, and experience. Amazon is a total compensation company. Dependent on the position offered, equity, sign-on payments, and other forms of compensation may be provided as part of a total compensation package, in addition to a full range of medical, financial, and/or other benefits. For more information, please visit https://www.aboutamazon.com/workplace/employee-benefits. Applicants should apply via our internal or external career site.
+Additional Details
 
+Job Posting Info: This is a pipeline position that will be opened on a recurring basis and used to fill roles aligned with the required skill sets.
 
-Company - Amazon Data Services, Inc.
+Program Dates: This is fulltime role with a flexible start date in 2024. Recruiting efforts will be ongoing until specific teams find an ideal match.
 
-Job ID: A2449479"
+Thrive Everywhere: NetApp's approach to in-person and remote work will be a flexible hybrid model that emphasizes flexibility for employees and puts our talent first.
+
+Experience
+
+This position typically requires a minimum of 2 years of relevant work experience.
+
+Equal Opportunity Employer
+
+NetApp is firmly committed to Equal Employment Opportunity (EEO) and to compliance with all federal, state and local laws that prohibit employment discrimination based on age, race, color, gender, sexual orientation, gender identity, national origin, religion, disability or genetic information, pregnancy, protected veteran status, and any other protected classification.
+
+Did you know...
+
+Statistics show women apply to jobs only when they're 100% qualified. But no one is 100% qualified. We encourage you to shift the trend and apply anyway! We look forward to hearing from you.
+
+Why NetApp?
+
+In a world full of generalists, NetApp is a specialist. No one knows how to elevate the world's biggest clouds like NetApp. We are data-driven and empowered to innovate. Trust, integrity, and teamwork all combine to make a difference for our customers, partners, and communities.
+
+We expect a healthy work-life balance. Our volunteer time off program is best in class, offering employees 40 hours of paid time off per year to volunteer with their favorite organizations. We provide comprehensive medical, dental, wellness, and vision plans for you and your family. We offer educational assistance, legal services, and access to discounts. We also offer financial savings programs to help you plan for your future.
+
+If you run toward knowledge and problem-solving, join us.
+
+USA Residents Only
+
+The base salary hiring wage range for this position which the Company reasonably and in good faith expects to pay for the position in the specified geographic areas or locations, is $108,900 - $153,120. Final compensation will be dependent on various factors relevant to the position and candidate such as geographical location, candidate qualifications, certifications, relevant job-related work experience, education, skillset and other relevant business and organizational factors, consistent with applicable law. In addition, the position may include some of the following comprehensive benefits such Medical, Dental, Vision, Life, 401(K), Paid Time off (PTO), sick time, leave of absence as per the FMLA and other relevant leave laws, Company bonus/commission, employee stock purchase plan, and/or restricted stocks (RSU's).
+
+124204PDN-9ad376af-3eeb-41d8-8f03-6027bc4a48f1"
