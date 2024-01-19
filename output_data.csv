@@ -1,67 +1,44 @@
 Key,Value
-title,NetApp Emerging Talent - QA Engineer
-company,Professional Diversity Network
-location,"San Jose, CA"
-keywords,"['engineer', 'python']"
-link,https://www.linkedin.com/jobs/search?keywords=Sqa%2BEngineer&location=Cupertino%2C%2BCalifornia%2C%2BUnited%2BStates&geoId=106758460&f_TPR=r604800&distance=25&original_referer=https%3A%2F%2Fwww.linkedin.com%2Fjobs%2Fsqa-engineer-jobs-cupertino-ca%3Fkeywords%3DSqa%2BEngineer%26location%3DCupertino%252C%2BCalifornia%252C%2BUnited%2BStates%26locationId%3D%26geoId%3D106758460%26f_TPR%3Dr604800%26distance%3D25&currentJobId=3805985620&position=13&pageNum=0
-description,"About NetApp
+title,"Optical Test and Automation Engineer, Google Cloud"
+company,Google
+location,"Sunnyvale, CA"
+keywords,"['engineer', 'python', 'API']"
+link,https://www.linkedin.com/jobs/search?keywords=Sqa%2BEngineer&location=Cupertino%2C%2BCalifornia%2C%2BUnited%2BStates&geoId=106758460&f_TPR=r86400&distance=25&currentJobId=3809448869&position=5&pageNum=0
+description,"Minimum qualifications:
 
-We're forward-thinking technology people with heart. We make our own rules, drive our own opportunities, and try to approach every challenge with fresh eyes. Of course, we can't do it alone. We know when to ask for help, collaborate with others, and partner with smart people. We embrace diversity and openness because it's in our DNA. We push limits and reward great ideas. What is your great idea?
+Bachelor's degree in Electrical Engineering, Optical Engineering, Physics, Computer Science, or equivalent practical experience.
+1 year of experience in Electrical Engineering, Computer Engineering, Computer Science, or a related field.
+Experience with Linux or other Unix operating systems.
+Experience with optical lab test and measurement instrumentation (e.g., fiber optic active and passive devices), and with fiber optics components handling and cleaning.
 
-""At NetApp, we fully embrace and advance a diverse, inclusive global workforce with a culture of belonging that leverages the backgrounds and perspectives of all employees, customers, partners, and communities to foster a higher performing organization."" -George Kurian, CEO
+Preferred qualifications:
 
-Job Summary
+Master's degree in Electrical Engineering, Optical Engineering, Physics, Computer Science, or a related technical field.
+2 years of experience in high-speed optical and electrical test and measurement equipment.
+Experience in troubleshooting optical passive components.
+Experience with lab test automation frameworks.
+Experience with Python, MATLAB, and LabVIEW.
+Understanding of compute and networking systems such as physical, functional, logical, mechanical, optics, electrical, software, thermal, etc.
 
-We are seeking candidates for an entry-level position with 2-3 years of professional experience in the software development and testing field. This role is designed for individuals looking to build on their existing skills and take the next step in their career.
+About The Job
 
-As a Quality Assurance Engineer you would work to ensure that products being built and processes being used adhere to all standards and requirements.As a key function in our engineering organization, you'd be responsible for identifying and eliminating defects in NetApp products and solutions to ensure customer satisfaction.
+Google's custom-designed machines make up one of the largest and most powerful computing infrastructures in the world. The Hardware Testing Engineering team ensures that this cutting-edge equipment is reliable. In the R&D lab, you design test equipment for prototypes of our machinery and develop the protocols used to scale these tests for the entire global team. Working closely with design engineers, you give input on designs to improve our hardware until you're sure it meets Google's standards of quality and reliability.
 
-We invest heavily in new talent. Your energy and fresh ideas are vital to cementing our position as a market -leader. We'll push you beyond your comfort zone with a belief that no idea is off-limits. At the same time, you'll have all the resources, mentoring and feedback you need to grow. What's more, whatever your role, you can be yourself in a team that celebrates individuality and welcomes different perspectives.
+As an Optical Test and Automation Engineer, you'll play a key role in the development of Google Cloud network infrastructures. You’ll perform testing/validation of novel and complex configurations of networking hardware, and collaborate closely with Hardware and Software teams to configure lab networks and test infrastructure that evaluate and characterize the performance of cloud computing and networking products. You will be the keeper of the lab, responsible for the day-to-day operations with pride in cleanliness, organization, and safety which plays a key role in the rapid development and support of Google’s data center technologies.
 
-Job Requirements
+Behind everything our users see online is the architecture built by the Technical Infrastructure team to keep it running. From developing and maintaining our data centers to building the next generation of Google platforms, we make Google's product portfolio possible. We're proud to be our engineers' engineers and love voiding warranties by taking things apart so we can rebuild them. We keep our networks up and running, ensuring our users have the best and fastest experience possible.
 
-Perform quality reviews and internal audits; evaluating data and writing reports to validate or indicate deviations from existing standards.
+The US base salary range for this full-time position is $141,000-$212,000 + bonus + equity + benefits. Our salary ranges are determined by role, level, and location. The range displayed on each job posting reflects the minimum and maximum target for new hire salaries for the position across all US locations. Within the range, individual pay is determined by work location and additional factors, including job-related skills, experience, and relevant education or training. Your recruiter can share more about the specific salary range for your preferred location during the hiring process.
 
-Development experience including design, implementation, documentation, and maintenance of test automation in Python, Perl, C or C++
+Please note that the compensation details listed in US role postings reflect the base salary only, and do not include bonus, equity, or benefits. Learn more about benefits at Google .
 
-Exposure developing complex test automation scripts and/or automation frameworks
+Responsibilities
 
-Experience creating and executing system level test plans, test cases and test reports for large/complex projects
+Lead test development for new and existing optical product designs, write test plans and drive test coverage based on product and quality requirements, and general optical lab hardware support.
+Drive software development and automation of optical test and measurement instrumentation, including interfacing with vendor APIs, data acquisition, and test script development and optimization.
+Perform wafer probe station operation, test configuration, execution, and development, probe calibration, high frequency measurements, wafer coordinate extraction, and test group formation.
+Develop and execute automated test scripts for functional and system test using Python and internal scripting tools.
+Debug issues relating to hardware, firmware, software, and test setup for switch, router, or transport platforms. Analyze, troubleshoot, and root cause field failures of optical transceiver modules.
 
-Analyzing statistical data and product specifications to determine standards and establish quality and reliability objectives of finished product.
 
-Recommending modifications to existing quality or production standards to achieve optimum quality.
-
-Additional Details
-
-Job Posting Info: This is a pipeline position that will be opened on a recurring basis and used to fill roles aligned with the required skill sets.
-
-Program Dates: This is fulltime role with a flexible start date in 2024. Recruiting efforts will be ongoing until specific teams find an ideal match.
-
-Thrive Everywhere: NetApp's approach to in-person and remote work will be a flexible hybrid model that emphasizes flexibility for employees and puts our talent first.
-
-Experience
-
-This position typically requires a minimum of 2 years of relevant work experience.
-
-Equal Opportunity Employer
-
-NetApp is firmly committed to Equal Employment Opportunity (EEO) and to compliance with all federal, state and local laws that prohibit employment discrimination based on age, race, color, gender, sexual orientation, gender identity, national origin, religion, disability or genetic information, pregnancy, protected veteran status, and any other protected classification.
-
-Did you know...
-
-Statistics show women apply to jobs only when they're 100% qualified. But no one is 100% qualified. We encourage you to shift the trend and apply anyway! We look forward to hearing from you.
-
-Why NetApp?
-
-In a world full of generalists, NetApp is a specialist. No one knows how to elevate the world's biggest clouds like NetApp. We are data-driven and empowered to innovate. Trust, integrity, and teamwork all combine to make a difference for our customers, partners, and communities.
-
-We expect a healthy work-life balance. Our volunteer time off program is best in class, offering employees 40 hours of paid time off per year to volunteer with their favorite organizations. We provide comprehensive medical, dental, wellness, and vision plans for you and your family. We offer educational assistance, legal services, and access to discounts. We also offer financial savings programs to help you plan for your future.
-
-If you run toward knowledge and problem-solving, join us.
-
-USA Residents Only
-
-The base salary hiring wage range for this position which the Company reasonably and in good faith expects to pay for the position in the specified geographic areas or locations, is $108,900 - $153,120. Final compensation will be dependent on various factors relevant to the position and candidate such as geographical location, candidate qualifications, certifications, relevant job-related work experience, education, skillset and other relevant business and organizational factors, consistent with applicable law. In addition, the position may include some of the following comprehensive benefits such Medical, Dental, Vision, Life, 401(K), Paid Time off (PTO), sick time, leave of absence as per the FMLA and other relevant leave laws, Company bonus/commission, employee stock purchase plan, and/or restricted stocks (RSU's).
-
-124204PDN-9ad376af-3eeb-41d8-8f03-6027bc4a48f1"
+Google is proud to be an equal opportunity workplace and is an affirmative action employer. We are committed to equal employment opportunity regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability, gender identity or Veteran status. We also consider qualified applicants regardless of criminal histories, consistent with legal requirements. See also Google's EEO Policy and EEO is the Law. If you have a disability or special need that requires accommodation, please let us know by completing our Accommodations for Applicants form ."
