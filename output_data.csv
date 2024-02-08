@@ -1,44 +1,26 @@
 Key,Value
-title,"Optical Test and Automation Engineer, Google Cloud"
-company,Google
-location,"Sunnyvale, CA"
-keywords,"['engineer', 'python', 'API']"
-link,https://www.linkedin.com/jobs/search?keywords=Sqa%2BEngineer&location=Cupertino%2C%2BCalifornia%2C%2BUnited%2BStates&geoId=106758460&f_TPR=r86400&distance=25&currentJobId=3809448869&position=5&pageNum=0
-description,"Minimum qualifications:
+title,Software Quality Assurance Engineer
+company,"Staffing Opportunities Solutions, Inc."
+location,"Boston, MA"
+keywords,['engineer']
+link,https://www.linkedin.com/jobs/search?keywords=Sqa%2BEngineer&location=United%2BStates&geoId=103644278&f_TPR=r604800&currentJobId=3818400292&position=2&pageNum=0
+description,"Title: Software Quality Assurance Engineer
 
-Bachelor's degree in Electrical Engineering, Optical Engineering, Physics, Computer Science, or equivalent practical experience.
-1 year of experience in Electrical Engineering, Computer Engineering, Computer Science, or a related field.
-Experience with Linux or other Unix operating systems.
-Experience with optical lab test and measurement instrumentation (e.g., fiber optic active and passive devices), and with fiber optics components handling and cleaning.
+Job Type: Full-Time Permanent
 
-Preferred qualifications:
+Location: 100% Remote Work
 
-Master's degree in Electrical Engineering, Optical Engineering, Physics, Computer Science, or a related technical field.
-2 years of experience in high-speed optical and electrical test and measurement equipment.
-Experience in troubleshooting optical passive components.
-Experience with lab test automation frameworks.
-Experience with Python, MATLAB, and LabVIEW.
-Understanding of compute and networking systems such as physical, functional, logical, mechanical, optics, electrical, software, thermal, etc.
+Staffing Opportunity Solutions is engaged with a dynamic B2B software client experiencing tremendous growth! Ideally looking for experience in Microsoft technologies, testing in the SaaS or cloud environments, and Agile.
 
-About The Job
+Skills:
+Identify, document, and validate defects in software solutions.
+Create test cases from functional requirements.
+Validate UI/UX elements in solutions
+Validate installation and configuration test cases in a desktop, browser, and cloud environment.
+Critical analytic and problem-solving ability - can understand complex designs and/or architecture and produce creative solutions
 
-Google's custom-designed machines make up one of the largest and most powerful computing infrastructures in the world. The Hardware Testing Engineering team ensures that this cutting-edge equipment is reliable. In the R&D lab, you design test equipment for prototypes of our machinery and develop the protocols used to scale these tests for the entire global team. Working closely with design engineers, you give input on designs to improve our hardware until you're sure it meets Google's standards of quality and reliability.
-
-As an Optical Test and Automation Engineer, you'll play a key role in the development of Google Cloud network infrastructures. You’ll perform testing/validation of novel and complex configurations of networking hardware, and collaborate closely with Hardware and Software teams to configure lab networks and test infrastructure that evaluate and characterize the performance of cloud computing and networking products. You will be the keeper of the lab, responsible for the day-to-day operations with pride in cleanliness, organization, and safety which plays a key role in the rapid development and support of Google’s data center technologies.
-
-Behind everything our users see online is the architecture built by the Technical Infrastructure team to keep it running. From developing and maintaining our data centers to building the next generation of Google platforms, we make Google's product portfolio possible. We're proud to be our engineers' engineers and love voiding warranties by taking things apart so we can rebuild them. We keep our networks up and running, ensuring our users have the best and fastest experience possible.
-
-The US base salary range for this full-time position is $141,000-$212,000 + bonus + equity + benefits. Our salary ranges are determined by role, level, and location. The range displayed on each job posting reflects the minimum and maximum target for new hire salaries for the position across all US locations. Within the range, individual pay is determined by work location and additional factors, including job-related skills, experience, and relevant education or training. Your recruiter can share more about the specific salary range for your preferred location during the hiring process.
-
-Please note that the compensation details listed in US role postings reflect the base salary only, and do not include bonus, equity, or benefits. Learn more about benefits at Google .
-
-Responsibilities
-
-Lead test development for new and existing optical product designs, write test plans and drive test coverage based on product and quality requirements, and general optical lab hardware support.
-Drive software development and automation of optical test and measurement instrumentation, including interfacing with vendor APIs, data acquisition, and test script development and optimization.
-Perform wafer probe station operation, test configuration, execution, and development, probe calibration, high frequency measurements, wafer coordinate extraction, and test group formation.
-Develop and execute automated test scripts for functional and system test using Python and internal scripting tools.
-Debug issues relating to hardware, firmware, software, and test setup for switch, router, or transport platforms. Analyze, troubleshoot, and root cause field failures of optical transceiver modules.
-
-
-Google is proud to be an equal opportunity workplace and is an affirmative action employer. We are committed to equal employment opportunity regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability, gender identity or Veteran status. We also consider qualified applicants regardless of criminal histories, consistent with legal requirements. See also Google's EEO Policy and EEO is the Law. If you have a disability or special need that requires accommodation, please let us know by completing our Accommodations for Applicants form ."
+Requirements:
+1-4+ years quality assurance experience, preferably in Financial Applications
+Testing Commercial / Enterprise SaaS
+Experience with Agile/Scrum development preferred
+Bachelor's Degree in an engineering or IT-related field preferred"

@@ -13,8 +13,8 @@ import sys
 driver = webdriver.Chrome('drivers/macos/chromedrivermac')
 
 job_titles = ["Quality Assurance Engineer", "Automation engineer", "energy sector"]
-job_locations = ["Cupertino, CA", "Sunnyvale, CA", 'remote']
-keywords = ["engineer", "python", "selenium", "API", "JS", "JavaScript", "SeleniumWebDriver", "Postman", "PostgreSQL", "SQL"]
+job_locations = ["USA"]
+keywords = ["python", "selenium", "API", "JS", "JavaScript", "SeleniumWebDriver", "Postman", "PostgreSQL", "SQL"]
 # keywords = ["engineer"]
 
 data_dictionary = {}
@@ -41,10 +41,11 @@ def link():
     # Clear the data dictionary at the beginning of each iteration
     data_dictionary.clear()
     try:
-        modified_url = 'https://www.linkedin.com/jobs/sqa-engineer-jobs-cupertino-ca?position=1&pageNum=0'
+        modified_url = 'https://www.linkedin.com/jobs/sqa-engineer-jobs-usa?position=1&pageNum=0'
         driver.get(modified_url)
         wait = WebDriverWait(driver, 10)
         print("I am loading the page")
+        time.sleep(2)
 
         driver.maximize_window()
         print("I am expanding the page")
@@ -54,7 +55,7 @@ def link():
         anytime_button = getattr(DateFilterLocators, "ANYTIME_BUTTON")
         wait.until(EC.element_to_be_clickable(anytime_button)).click()
         print(" I am clicking on anythime button ")
-        time.sleep(5)
+        time.sleep(7)
         past_week_button = getattr(DateFilterLocators, "PAST_WEEK_BUTTON")     
         wait.until(EC.element_to_be_clickable(past_week_button)).click()
         done_button = getattr(DateFilterLocators, "DONE_BUTTON")

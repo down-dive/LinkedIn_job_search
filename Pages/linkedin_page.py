@@ -17,7 +17,7 @@ wait = WebDriverWait(driver, 20)
 
 job_titles = ["Quality Assurance Engineer", "Automation engineer", "energy sector"]
 job_locations = ["Cupertino, CA", "Sunnyvale, CA", 'remote']
-keywords = ["engineer", "python", "selenium", "API", "JS", "JavaScript", "SeleniumWebDriver", "Postman", "PostgreSQL", "SQL"]
+keywords = ["python", "selenium", "API", "JS", "JavaScript", "SeleniumWebDriver", "Postman", "PostgreSQL", "SQL"]
 # keywords = ["engineer"]
 
 data_dictionary = {}
