@@ -4,6 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, StaleElementReferenceException
+from .common import CommonOps
 
 import time
 import csv
@@ -41,14 +42,14 @@ def write_data_to_csv(data_dict):
         print("No data has been written to the CSV file, the dictionary is empty")
         
         
-class LinkedInPage:
+class LinkedInPage(CommonOps):
     def __init__(self, driver):
         self.driver = driver
         self.wait = WebDriverWait(driver, 10)
         
-    def navigate_to_jobs(self, title, location):
-        modified_url = f'https://www.linkedin.com/jobs/{title.lower().replace(" ", "-")}-jobs-{location.lower().replace(" ", "-")}?position=1&pageNum=0'
-        self.driver.get(modified_url)
+    # def navigate_to_jobs(self, title, location):
+    #     modified_url = f'https://www.linkedin.com/jobs/{title.lower().replace(" ", "-")}-jobs-{location.lower().replace(" ", "-")}?position=1&pageNum=0'
+    #     self.driver.get(modified_url)
 
     def apply_date_filter(self):
         print(" I am on date filter")
@@ -73,7 +74,7 @@ class LinkedInPage:
         #self.wait for the presence and visibility of all elements
         # titles = self.wait.until(EC.visibility_of_all_elements_located((By.XPATH, '//*[@data-tracking-control-name="public_jobs_jserp-result_search-card"]')))
         
-        self.wait.until(EC.visibility_of_all_elements_located((By.XPATH, '//*[@data-tracking-control-name="public_jobs_jserp-result_search-card"]')))
+        self.wait_for(self.By.XPATH, '//*[@data-tracking-control-name="public_jobs_jserp-result_search-card"]')
         time.sleep(5)
         titles = self.driver.find_elements(By.XPATH, '//*[@data-tracking-control-name="public_jobs_jserp-result_search-card"]')
         print("Titles are located")
@@ -140,107 +141,4 @@ class LinkedInPage:
                     else:
                         print("Not all keywords are present in the text.")
 
-    # Other methods related to LinkedInPage can be added here
 
-# def link():
-    # Clear the data dictionary at the beginning of each iteration
-    # data_dictionary.clear()
-    # try:
-    #     modified_url = 'https://www.linkedin.com/jobs/sqa-engineer-jobs-cupertino-ca?position=1&pageNum=0'
-    #     driver.get(modified_url)
-    #     self.wait = WebDriverWait(driver, 10)
-    #     print("I am loading the page")
-
-    #     driver.maximize_window()
-    #     print("I am expanding the page")
-
-    #     # Change the date filter
-    #     #self.wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@aria-label="Date posted filter. Any Time filter is currently applied. Clicking this button displays all Date posted filter options." ]'))).click()
-    #     anytime_button = getattr(DateFilterLocators, "ANYTIME_BUTTON")
-    #     self.wait.until(EC.element_to_be_clickable(anytime_button)).click()
-    #     print(" I am clicking on anythime button ")
-    #     time.sleep(5)
-    #     past_week_button = getattr(DateFilterLocators, "PAST_WEEK_BUTTON")     
-    #     self.wait.until(EC.element_to_be_clickable(past_week_button)).click()
-    #     done_button = getattr(DateFilterLocators, "DONE_BUTTON")
-    #     self.wait.until(EC.element_to_be_clickable(done_button)).click()
-    #     print("I am changing the date filter")
-    #     sys.exit()
-
-    #     # Clicking on each job title on the page
-    #     titles =self.wait.until(EC.presence_of_all_elements_located((By.XPATH, '//*[@data-tracking-control-name="public_jobs_jserp-result_search-card"]')))
-
-    #     self.wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@data-tracking-control-name="public_jobs_jserp-result_search-card"]')))
-
-    #     titles = self.driver.find_elements(By.XPATH, '//*[@data-tracking-control-name="public_jobs_jserp-result_search-card"]')
-        
-    #     for index in range(len(titles)):
-    #         if index < len(titles):
-    #             timeout = 10
-    #             try:
-    #                 titles = self.driver.find_elements(By.XPATH, '//*[@data-tracking-control-name="public_jobs_jserp-result_search-card"]')
-    #                 title = titles[index]
-    #                 element_present = EC.presence_of_element_located((By.XPATH, f'(//*[@data-tracking-control-name="public_jobs_jserp-result_search-card"])[{index + 1}]'))
-    #                 WebDriverWait(driver, timeout).until(element_present)
-
-    #                 title.click()
-    #                 print(f"I am clicking on title {index + 1}")
-    #                 current_url = self.driver.current_url
-    #                 print("Current Webpage URL:", current_url)
-
-    #                 expand_button_locator = (By.XPATH, '//*[@aria-label="Show more, visually expands previously read content above"]')
-    #                 self.wait.until(EC.element_to_be_clickable(expand_button_locator)).click()
-    #                 print("I am expanding the page")
-
-    #                 job_title_extracted = self.driver.find_element(By.XPATH, "//a[@class='topcard__link']").text
-    #                 company_extracted = self.driver.find_element(By.XPATH, "//a[@class='topcard__org-name-link topcard__flavor--black-link']").text
-    #                 location_extracted = self.driver.find_element(By.XPATH, "//span[@class='topcard__flavor topcard__flavor--bullet']").text
-    #                 job_description_extracted = self.driver.find_element(By.XPATH, "//div[@class='show-more-less-html__markup relative overflow-hidden']").text
-
-    #                 found_keywords = [keyword for keyword in keywords if keyword.lower() in job_description_extracted.lower()]
-
-    #                 if found_keywords:
-    #                     print("Success: Found the following keyword(s):", ', '.join(found_keywords))
-    #                     data_dictionary['title'] = job_title_extracted
-    #                     data_dictionary['company'] = company_extracted
-    #                     data_dictionary['location'] = location_extracted
-    #                     data_dictionary['keywords'] = found_keywords
-    #                     data_dictionary['link'] = current_url
-    #                     data_dictionary['description'] = job_description_extracted
-    #                 else:
-    #                     print("Not all keywords are present in the text.")
-
-    #             except (TimeoutException, StaleElementReferenceException) as e:
-    #                 print(f"Exception occurred: {e}. Reloading the page...")
-    #                 driver.refresh()
-    #                 expand_button_locator = (By.XPATH, '//*[@aria-label="Show more, visually expands previously read content above"]')
-    #                 self.wait.until(EC.element_to_be_clickable(expand_button_locator)).click()
-    #                 print("I am expanding the page")
-    #                 job_title_extracted = self.driver.find_element(By.XPATH, "//a[@class='topcard__link']").text
-    #                 company_extracted = self.driver.find_element(By.XPATH, "//a[@class='topcard__org-name-link topcard__flavor--black-link']").text
-    #                 location_extracted = self.driver.find_element(By.XPATH, "//span[@class='topcard__flavor topcard__flavor--bullet']").text
-    #                 job_description_extracted = self.driver.find_element(By.XPATH, "//div[@class='show-more-less-html__markup relative overflow-hidden']").text
-                    
-    #                 found_keywords = [keyword for keyword in keywords if keyword.lower() in job_description_extracted.lower()]
-
-    #                 if found_keywords:
-    #                     print("Success: Found the following keyword(s):", ', '.join(found_keywords))
-    #                     data_dictionary['title'] = job_title_extracted
-    #                     data_dictionary['company'] = company_extracted
-    #                     data_dictionary['location'] = location_extracted
-    #                     data_dictionary['keywords'] = found_keywords
-    #                     data_dictionary['link'] = current_url
-    #                     data_dictionary['description'] = job_description_extracted
-    #                 else:
-    #                     print("Not all keywords are present in the text.")
-    #             # else:
-    #             #     print("Not all keywords are present in the text.")
-                    
-    # except Exception as e:
-    #     print(f"An exception occurred: {e}")
-    #     print("I am at the end")
-    #     time.sleep(2)
-    #     driver.quit()
-    # finally:
-    #     # Always write data to CSV, even if an exception occurs
-    #     write_data_to_csv(data_dictionary)
