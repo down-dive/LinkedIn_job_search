@@ -1,8 +1,8 @@
 .env
 .DS_Store
 output_data.csv
-__pychache__
-Pages/__pychache__
+__pycache__
+Pages/__pycache__
 output_data
 drivers
-linkedin_page.py
+Pages/linkedin_page.py
