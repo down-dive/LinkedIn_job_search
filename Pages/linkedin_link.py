@@ -15,7 +15,6 @@ driver = webdriver.Chrome('drivers/macos/chromedrivermac')
 job_titles = ["Quality Assurance Engineer", "Automation engineer", "energy sector"]
 job_locations = ["USA"]
 keywords = ["python", "selenium", "API", "JS", "JavaScript", "SeleniumWebDriver", "Postman", "PostgreSQL", "SQL"]
-# keywords = ["engineer"]
 
 data_dictionary = {}
 
@@ -129,8 +128,6 @@ def link():
                         data_dictionary['description'] = job_description_extracted
                     else:
                         print("Not all keywords are present in the text.")
-                # else:
-                #     print("Not all keywords are present in the text.")
                     
     except Exception as e:
         print(f"An exception occurred: {e}")
