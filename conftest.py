@@ -5,8 +5,11 @@ import time
 # Fixture to create a WebDriver instance for testing
 @pytest.fixture
 def driver():
-    # URL for the initial page before switching to the iframe
-    url = "https://www.linkedin.com/"
+    # URL for the login page 
+    # url = "https://www.linkedin.com/"
+    
+    # url without login
+    url = "https://www.linkedin.com/jobs/sqa-engineer-jobs-cupertino-ca?position=1&pageNum=0"
     
     driver = webdriver.Chrome(executable_path='drivers/macos/chromedrivermac')
     
