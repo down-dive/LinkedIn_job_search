@@ -13,11 +13,11 @@ username = env_vars["USERNAME"]
 password = env_vars["PASSWORD"]
 
 # Fixture to log in and return LoginPage instance
-# @pytest.fixture
-# def logged_in_form(driver):
-#     form = LoginPage(driver)
-#     form.login(username, password)
-#     return form
+@pytest.fixture
+def logged_in_form(driver):
+    form = LoginPage(driver)
+    form.login(username, password)
+    return form
 
 # Test for valid authentication using the logged_in_form fixture
 # def test_valid_authentication(logged_in_form):
@@ -27,3 +27,4 @@ def test_linkedin_search(driver):
     linkedinPage = LinkedInPage(driver)
     
     linkedinPage.apply_date_filter()
+    linkedinPage.click_job_title()
