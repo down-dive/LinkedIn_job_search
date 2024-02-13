@@ -40,7 +40,7 @@ def link():
     # Clear the data dictionary at the beginning of each iteration
     data_dictionary.clear()
     try:
-        modified_url = 'https://www.linkedin.com/jobs/sqa-engineer-jobs-usa?position=1&pageNum=0'
+        modified_url = 'https://www.linkedin.com/jobs/automation-engineer-jobs-bay-area,ca?position=1&pageNum=0'
         driver.get(modified_url)
         wait = WebDriverWait(driver, 10)
         print("I am loading the page")
